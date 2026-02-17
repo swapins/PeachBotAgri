@@ -1,3 +1,7 @@
+# <p align="center">
+	<img src="https://peachbot.in/assets/img/logo.png" alt="PeachBot Agri" width="240" />
+</p>
+
 # PeachBot Agri
 
 PeachBot Agri is an AI-driven, edge-first platform for precision agriculture. It combines sensor telemetry, computer vision, and historical meteorological data to provide field-level diagnostics, pest/disease alerts, and simple remediation guidance.

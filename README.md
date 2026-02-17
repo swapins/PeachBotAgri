@@ -97,6 +97,12 @@ WantedBy=multi-user.target
 
 ---
 
+## Usage Restrictions & Patent Notice
+This project is provided for research, development, and internal evaluation only. It is NOT licensed for commercial use, resale, or inclusion in commercial products or services without an explicit commercial license from the developer. Parts of this project are associated with a patented system; do not use the software in any commercial or redistributed product without first obtaining a license.
+
+For details and licensing inquiries, see `USAGE_RESTRICTIONS.md` or contact Swapin Vidya at swapin@peachbot.in.
+
+
 ## Citation & Attribution
 If you use PeachBot Agri in publications or public demonstrations, please cite the project and acknowledge the developer:
 

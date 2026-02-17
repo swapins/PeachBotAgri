@@ -10,6 +10,9 @@ PeachBot Agri is an AI-driven, edge-first platform for precision agriculture. It
 
 This repository provides the reference implementation and integration utilities to run PeachBot Agri on small edge devices (8" touchscreen kiosks, Jetson family, Raspberry Pi) or on-prem servers.
 
+
+<img src="assets/Peachbot_Agri_Ai_01.png" alt="PeachBot Agri"/>
+
 ---
 
 **Core Features**

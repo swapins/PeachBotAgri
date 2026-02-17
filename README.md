@@ -135,7 +135,7 @@ Developer: Swapin Vidya — contact: swapin@peachbot.in — LinkedIn: https://ww
 ---
 
 ## License
-MIT License — see `LICENSE`.
+Non-Commercial License (see `LICENSE.md`) — this project is distributed for research, evaluation, and internal use only. Commercial use requires a separate commercial license; see `USAGE_RESTRICTIONS.md` for details.
 
 ## Contact
 - Developer: Swapin Vidya

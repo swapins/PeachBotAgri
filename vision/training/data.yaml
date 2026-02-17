@@ -1,0 +1,8 @@
+train: ../datasets/train/images
+val: ../datasets/val/images
+
+names:
+  0: healthy
+  1: rust
+  2: blossom
+  3: cherry

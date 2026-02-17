@@ -1,0 +1,7 @@
+requests
+python-dotenv
+opencv-python
+ultralytics
+torch
+numpy
+Flask

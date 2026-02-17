@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>PeachBot Agri — Touch UI</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>PeachBot Agri</h1>
+        <p class="subtitle">Edge-first dashboard — optimized for 8" touch displays</p>
+      </header>
+
+      <section class="card">
+        <h2>Run Analysis</h2>
+        <div class="row">
+          <label>Soil moisture</label>
+          <input id="moisture" type="number" min="0" max="100" value="45">
+        </div>
+        <div class="row">
+          <label>Temperature (°C)</label>
+          <input id="temp" type="number" step="0.1" value="28">
+        </div>
+        <div class="row">
+          <label>Humidity (%)</label>
+          <input id="humidity" type="number" min="0" max="100" value="55">
+        </div>
+        <div class="row">
+          <label>Vision label (optional)</label>
+          <input id="vision" type="text" placeholder="e.g. Leaf Rust, Blossom">
+        </div>
+        <div class="row">
+          <label>Latitude</label>
+          <input id="lat" type="text" placeholder="12.3375">
+        </div>
+        <div class="row">
+          <label>Longitude</label>
+          <input id="lon" type="text" placeholder="75.8069">
+        </div>
+
+        <button id="runBtn" class="big">Run</button>
+      </section>
+
+      <section class="card" id="output">
+        <h2>Output</h2>
+        <pre id="outText">No results yet.</pre>
+      </section>
+    </div>
+
+    <script>
+      const runBtn = document.getElementById('runBtn');
+      runBtn.addEventListener('click', async () => {
+        const moisture = Number(document.getElementById('moisture').value);
+        const temp = Number(document.getElementById('temp').value);
+        const humidity = Number(document.getElementById('humidity').value);
+        const vision = document.getElementById('vision').value || null;
+        const lat = document.getElementById('lat').value || null;
+        const lon = document.getElementById('lon').value || null;
+
+        const payload = {
+          sensors: {moisture, temp, humidity},
+          vision: vision || null,
+        };
+        if (lat && lon) {
+          payload.lat = parseFloat(lat);
+          payload.lon = parseFloat(lon);
+        }
+
+        document.getElementById('outText').textContent = 'Running...';
+
+        try {
+          const res = await fetch('/run-demo', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(payload)
+          });
+          const j = await res.json();
+          document.getElementById('outText').textContent = JSON.stringify(j, null, 2);
+        } catch (e) {
+          document.getElementById('outText').textContent = 'Error: ' + e;
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
-# <p align="center">
-	<img src="https://peachbot.in/assets/img/logo.png" alt="PeachBot Agri" width="240" />
+<p align="center">
+  <img src="assets/logo.svg" alt="PeachBot Agri" width="200" />
 </p>
 
 # PeachBot Agri

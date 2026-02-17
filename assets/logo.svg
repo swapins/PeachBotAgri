@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#0f1724" stroke="#34d399" stroke-width="2"/>
+  
+  <!-- Peach body -->
+  <circle cx="100" cy="85" r="40" fill="#f59e0b"/>
+  <ellipse cx="100" cy="75" rx="35" ry="30" fill="#fbbf24"/>
+  
+  <!-- Leaf -->
+  <ellipse cx="125" cy="55" rx="18" ry="12" fill="#10b981" transform="rotate(-30 125 55)"/>
+  
+  <!-- Stem -->
+  <line x1="100" y1="45" x2="100" y2="25" stroke="#6b5b45" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Bot indicator (circuit nodes) -->
+  <g fill="#34d399">
+    <circle cx="75" cy="130" r="4"/>
+    <circle cx="100" cy="135" r="4"/>
+    <circle cx="125" cy="130" r="4"/>
+  </g>
+  <!-- Connecting lines -->
+  <g stroke="#34d399" stroke-width="1.5" fill="none">
+    <line x1="75" y1="130" x2="100" y2="135"/>
+    <line x1="100" y1="135" x2="125" y2="130"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#34d399">
+    PeachBot
+  </text>
+</svg>

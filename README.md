@@ -2,9 +2,9 @@
   <img src="assets/logo.png" alt="PeachBot Agri" width="200" />
 </p>
 
-# PeachBot Agri
+# agri-edge-ai-platform
 
-PeachBot Agri is an AI-driven, edge-first platform for precision agriculture. It combines sensor telemetry, computer vision, and historical meteorological data to provide field-level diagnostics, pest/disease alerts, and simple remediation guidance.
+agri-edge-ai-platform is an AI-driven, edge-first platform for precision agriculture. It combines sensor telemetry, computer vision, and historical meteorological data to provide field-level diagnostics, pest/disease alerts, and simple remediation guidance.
 
 **Developer:** Swapin Vidya
 
